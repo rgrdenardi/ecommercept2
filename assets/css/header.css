@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding-top: 1.375rem;
+    padding-bottom: 1rem;
+    justify-content: space-between;
+    background-color: #fff;
+    position: relative;
+}
+
+.login-btn:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+.header__user {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.15rem;
+    color: var(--txt-color);
+}
+
+.header__admin-panel-btn {
+    width: fit-content;
+}
+
+@media screen and (min-width: 1024px) {
+    .header {padding-bottom: 1.375rem;}
+}

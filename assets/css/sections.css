@@ -1,0 +1,9 @@
+.sect {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.sect:last-child {
+    padding-bottom: 4rem;
+}
+

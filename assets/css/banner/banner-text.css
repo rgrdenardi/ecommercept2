@@ -1,0 +1,30 @@
+.banner__text {
+    color: var(--bg-color);
+    text-align: left;
+    line-height: 2rem;
+}
+
+.banner__title {
+    font-weight: 700;
+    font-size: var(--title-size);
+}
+
+.banner__subtitle {
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+/* tablets */
+@media screen and (min-width: 768px) {
+    .banner__text {
+        line-height: 4rem;
+    }
+
+    .banner__title {
+        font-size: 52px;
+    }
+
+    .banner__subtitle {
+        font-size: var(--title-size);
+    }
+}

@@ -1,0 +1,54 @@
+.inp {
+    width: 100%;
+    height: 56px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 1rem;
+    border-bottom: 3px solid #46464650;
+    color: var(--txt-color);
+    font-weight: 400;
+}
+
+.inp:not(:placeholder-shown) ~ .inp-label, .inp:focus ~ .inp-label {
+    top: 1rem;
+    left: 1rem;
+}
+
+.inp--invalid {
+    border-color: rgb(231, 71, 71);
+}
+
+.form__error-msg {
+    text-align: center;
+    color: rgb(231, 71, 71);
+}
+
+.inp-label {
+    position: absolute;
+    left: 1rem;
+    top: 28px;
+    transform: translateY(-50%);
+    color: #a2a2a2;
+    font-weight: 400;
+    font-size: var(--subtitle-size);
+    transition: top .2s;
+}
+
+
+.textarea {
+    resize: none;
+    width: 100%;
+    height: 82px;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 400;
+    color: var(--txt-color);
+    border-bottom: 3px solid #46464650;
+}
+
+.inp:focus, .textarea:focus {
+    border-color: var(--main-color);
+}

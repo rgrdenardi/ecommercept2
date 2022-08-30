@@ -1,0 +1,124 @@
+.footer {
+    padding: 2rem 1rem;
+    padding-bottom: 0;
+    background-color: #EAF2FD;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .wrapper {
+    width: 100%;
+}
+
+.logo--footer .logo__title {
+    font-size: 2rem;
+}
+
+.footer__info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__about {
+    margin-top: 1rem;
+    line-height: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.about__text {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--txt-color)
+}
+
+/* form style */
+.call-us {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 100%;
+    row-gap: 1rem;
+}
+
+.call-us__title {
+    font-weight: 700;
+    color: var(--txt-color);
+}
+
+.input-box {
+    position: relative;
+    text-align: center;
+}
+
+.footer .inp:focus ~ .inp-label {
+    top: .5rem;
+}
+
+.footer .inp:not(:placeholder-shown) ~ .inp-label {
+    top: .5rem;
+}
+
+.footer .form__error-msg {
+    position: relative;
+    top: .5rem;
+    color: rgb(231, 71, 71);
+}
+
+.btn--post {
+    width: 150px;
+}
+
+/* credits */
+.developer {
+    background-color: var(--bg-color);
+    margin-top: 2rem;
+    width: 100vw;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.developer__text {
+    font-weight: 500;
+    color: var(--txt-color);
+}
+
+/* tablets */
+@media screen and (min-width: 768px) {
+    .footer .wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .call-us {
+        margin-top: 0;
+        width: 50%;
+    }
+
+}
+
+/* computers */
+@media screen and (min-width: 1024px) {
+    .footer__info-box {
+        column-gap: 3rem;
+        flex-direction: row;
+    }
+
+    .footer__about {margin-right: 1rem;}
+
+    .footer .inp:focus ~ .inp-label {
+        top: 1rem;
+    }
+    
+    .footer .inp:not(:placeholder-shown) ~ .inp-label {
+        top: 1rem;
+    }
+
+}
